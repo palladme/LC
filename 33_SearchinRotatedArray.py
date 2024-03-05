@@ -17,12 +17,12 @@ def SearchinRotatedArray(nums: List[int], target: int) -> int:
     r = len(nums) - 1
 
     while l <= r:
-        m = l + (r-1)//2
+        m = l + (r-l)//2
 
         if target == nums[m]:
             return m
 
-        if nums[l] < nums[m]:
+        if nums[l] <= nums[m]:
             if target > nums[m] or target < nums[l]:
                 l = m + 1
             else:
