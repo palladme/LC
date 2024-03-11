@@ -41,23 +41,23 @@ class Solution:
         
 
 # Testing
-test1_list1 = [1,2,4]
-test1_list2 = [1,3,4]
+test1_vals1 = [1,2,4]
+test1_vals2 = [1,3,4]
 test1_expected = [1,1,2,3,4,4]
 
 # Convert to list1 to LinkedList
 test1_List1 = LinkedList()
-test1_list1_node = ListNode(test1_list1[0])
+test1_list1_node = ListNode(test1_vals1[0])
 test1_List1.head = test1_list1_node
-for val in test1_list1[1:]:
+for val in test1_vals1[1:]:
     test1_list1_node.next = ListNode(val)
     test1_list1_node = test1_list1_node.next
 
 # Convert to list2 to LinkedList
 test1_List2 = LinkedList()
-test1_list2_node = ListNode(test1_list2[0])
+test1_list2_node = ListNode(test1_vals2[0])
 test1_List2.head = test1_list2_node
-for val in test1_list2[1:]:
+for val in test1_vals2[1:]:
     test1_list2_node.next = ListNode(val)
     test1_list2_node = test1_list2_node.next
 
